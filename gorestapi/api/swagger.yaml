@@ -1,0 +1,61 @@
+swagger: '2.0'
+info:
+  description:
+    'GoRestAPI demo'
+  version: '0.0.1'
+  title: GoRestAPI
+
+host: None
+paths:
+  /api/v1/user/{suser_id}:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: user_id
+          type: string
+          description: user_id
+          required: true
+        - in: query
+          name: offset
+          type: integer
+          required: true
+        - in: query
+          name: limit
+          type: integer
+          required: true
+      responses:
+        200:
+          description: Succsess
+          schema:
+            type: object
+            properties:
+              page:
+                $ref: ""
+              entries:
+                type: array
+                items:
+                  $ref: ""
+        400:
+          description: Not Valid Request
+        500:
+          description: Server Not Responding
+      summary: None
+  /api/v1/payout-request:
+    post:
+      parameters:
+        - in: body
+          name: None
+          required: true
+          schema:
+            type: object
+            $ref: ""
+      responses:
+        204:
+          description: Request is not created
+        400:
+          description: Not Valid Request
+        500:
+          description: Server Not Responding
+      summary: None

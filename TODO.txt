@@ -1,0 +1,44 @@
+
+- set docker compose services
+- GoApp API container app (running endlessly)
+- GoApp - GORM add work with entities
+- GoApp - Start / Stop / Status / CRUD request
+- GoApp - set client
+- GoApp - gracefull shutdown
+
+- set routes file 
+- set Routes grouping
+- set .env file
+
+- set Elastic search for loggs and attach GoApp
+- set Postgresql + Client (go user) and settle databases for Users \ Orders
+- работа с шардами постгреса (шарды . репликация)
+- set MongoDB + Client for JSON files for Items
+- set REDIS for Cashing requests
+- set RabbitMQ message brocker?
+- set grafana prometeus fo Go app 
+
+
+
+- Postman (Create API request test collection \ importable)
+- Swager Documentation for API
+- Swager.yaml - how settle
+- set Jeager for trasing (wrap all API endpoints)
+- test Redis and speed of requests
+- settle config.toml?
+- Context in docker app? как передается и тд (ctx context.Context)
+
+- add unit testing
+
+- security protection and sql injections protections
+- slack message if server runs/ fails / etc(status)
+
+- set auoth 2.0 for new user(login)
+- heavy load test
+
+
+- git actions CIDI deploy / test / linters  etc
+ 
+- k8s + heml chart set all project in kubernetes
+- add front end pages for demo
+- Cloud deploy

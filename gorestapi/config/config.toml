@@ -1,0 +1,12 @@
+# How to do set confing ?
+Environment = "local"
+
+[server]
+port = "8080"
+
+[database]
+host = "postgres_db"
+port = "5432"
+username = "goapp"
+password = "goapp_pass"
+database = "go_rest_api_db"
